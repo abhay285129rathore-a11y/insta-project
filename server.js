@@ -8,6 +8,10 @@ const jwt = require('jsonwebtoken');
 
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("Insta API running 🚀");
+});
+
 const SECRET_KEY = "mysecret123";
 
 // Simple in-memory storage
